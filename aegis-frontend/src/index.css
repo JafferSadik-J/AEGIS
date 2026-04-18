@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  background: black;
+  color: #00d4ff;
+  font-family: monospace;
+}
+
+div {
+  letter-spacing: 1px;
+}
