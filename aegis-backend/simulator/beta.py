@@ -4,18 +4,18 @@ import time
 URL = "http://127.0.0.1:8000/ingest"
 
 def attack():
-    print("Launching GHOST PING (Brute Force)...")
+    print("Launching PHANTOM INJECTION (Lateral Movement)...")
 
-    for i in range(50):
+    for i in range(10):
         data = {
-            "node": "ALPHA",
-            "failed_logins": 50
+            "node": "BETA",
+            "lateral_movement": True
         }
 
         response = requests.post(URL, json=data)
         print(response.json())
 
-        time.sleep(0.1)
+        time.sleep(1)
 
 if __name__ == "__main__":
     input("Press ENTER to launch attack...")
